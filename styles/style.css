@@ -15,10 +15,56 @@ p {
 }
 
 .init {
-  background-color: aqua;
-  border: 5px solid gray;
+  border: 3px solid transparent;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  box-shadow: -6px 0px 21px 0px rgba(0, 0, 0, 0.75);
+  margin-top: 30px;
+  animation: carga 1s linear infinite;
+  border-image: linear-gradient(to right, rgb(7, 171, 221), #2603eb) 100% 1;
+}
+
+@keyframes carga {
+  100% {
+    border-image: linear-gradient(to right, rgb(7, 171, 221), #2603eb) 100% 0;
+  }
+}
+
+.init img {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  left: 300px;
+  border-radius: 40px;
+  border: 3px solid #2603eb;
+  margin: 20px
+}
+
+
+.presentation h2 {
+  text-align: center;
+  margin: 30px;
+  text-decoration: underline black 2px;
+  font-size: 40px;
+}
+
+.presentation h2:hover {
+  color: #2603eb;
+  text-decoration: underline #2603eb 3px;
+  font-size: 50px;
+}
+
+.presentation li:hover {
+  color: #2603eb;
+}
+
+
+
+.presentation li {
+  font-size: 20px;
+  margin: 10px;
+  font-family: "Montserrat"
 }
