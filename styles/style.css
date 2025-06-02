@@ -151,3 +151,9 @@ p {
     border-image: linear-gradient(to right, white, #2603eb) 100% 0;
   }
 }
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
