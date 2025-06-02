@@ -152,6 +152,31 @@ p {
   }
 }
 
+.habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  margin-bottom: 20px;
+  gap: 10px;
+  margin: 40px;
+  box-shadow: 10px 10px 51px -10px rgba(0, 0, 0, 0.87);
+  animation: carga 3s linear infinite;
+  border-image: linear-gradient(to right, white, #2603eb) 100% 1;
+  border: 3px solid transparent;
+}
+
+@keyframes carga {
+  100% {
+    border-image: linear-gradient(to right, white, #2603eb) 100% 0;
+  }
+}
+
+.habilidades img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+
 .contact {
   display: flex;
   justify-content: center;
