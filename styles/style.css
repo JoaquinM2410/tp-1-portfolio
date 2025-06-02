@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+body {
+  background-color: aliceblue;
+}
+
 h1,
 h2,
 h3,
@@ -23,13 +27,13 @@ p {
   position: relative;
   box-shadow: -6px 0px 21px 0px rgba(0, 0, 0, 0.75);
   margin-top: 30px;
-  animation: carga 1s linear infinite;
-  border-image: linear-gradient(to right, rgb(7, 171, 221), #2603eb) 100% 1;
+  animation: carga 3s linear infinite;
+  border-image: linear-gradient(to right, white, #2603eb) 100% 1;
 }
 
 @keyframes carga {
   100% {
-    border-image: linear-gradient(to right, rgb(7, 171, 221), #2603eb) 100% 0;
+    border-image: linear-gradient(to right, white, #2603eb) 100% 0;
   }
 }
 
@@ -67,4 +71,49 @@ p {
   font-size: 20px;
   margin: 10px;
   font-family: "Montserrat"
+}
+
+.shadow-dance-text {
+  font-size: 40px;
+  color: white;
+  text-shadow: 5px 5px 0 rgb(7, 171, 221), 10px 10px 0 #2603eb;
+  animation: shadow-dance 2s infinite;
+  margin: 30px;
+  text-align: center;
+}
+
+@keyframes shadow-dance {
+
+  0%,
+  100% {
+    text-shadow: 5px 5px 0 rgb(7, 171, 221), 10px 10px 0 #2603eb;
+  }
+
+  50% {
+    text-shadow: -5px -5px 0 #2603eb, -10px -10px 0 rgb(7, 171, 221);
+  }
+}
+
+.about-me {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.my-info {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 51px -10px rgba(0, 0, 0, 0.87);
+}
+
+.my-info p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.my-info p:hover {
+  color: #2603eb;
+  font-size: 20px;
+
 }
