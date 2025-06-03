@@ -154,7 +154,7 @@ p {
 
 .habilidades {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   margin-bottom: 20px;
   gap: 10px;
   margin: 40px;
@@ -181,4 +181,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.probando {
+  background-color: red;
 }
