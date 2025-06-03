@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: aliceblue;
+  background-color: rgb(193, 223, 248);
 }
 
 h1,
@@ -25,14 +25,10 @@ p {
 .init {
   border: 3px solid transparent;
   border-radius: 10px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   box-shadow: -6px 0px 21px 0px rgba(0, 0, 0, 0.75);
   margin-top: 30px;
   animation: carga 3s linear infinite;
   border-image: linear-gradient(to right, white, #2603eb) 100% 1;
-
 }
 
 @keyframes carga {
@@ -51,7 +47,7 @@ p {
 
 .presentation {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -171,4 +167,34 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 480px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .presentation li {
+    font-size: 15px;
+  }
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .init img {
+    width: 200px;
+    height: 200px;
+  }
 }
